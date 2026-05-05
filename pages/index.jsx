@@ -11,10 +11,8 @@ import FAQ from '../src/sections/FAQ';
 import WhyUs from '../src/sections/WhyUs';
 import Contact from '../src/sections/Contact';
 import Footer from '../src/sections/Footer';
-import { client } from '../src/lib/sanity';
-import { agentsQuery, teamQuery, testimonialsQuery, faqQuery } from '../src/lib/queries';
 
-export default function IndexPage({ agents, teamMembers, testimonials, faqItems }) {
+export default function IndexPage() {
   return (
     <>
       <Head>
@@ -25,36 +23,16 @@ export default function IndexPage({ agents, teamMembers, testimonials, faqItems 
       <main>
         <Hero />
         <TrustBar />
-        <Services agents={agents} />
+        <Services />
         <Problem />
         <Process />
-        <Team teamMembers={teamMembers} />
-        <Testimonials testimonials={testimonials} />
-        <FAQ faqItems={faqItems} />
+        <Team />
+        <Testimonials />
+        <FAQ />
         <WhyUs />
         <Contact />
       </main>
       <Footer />
     </>
   );
-}
-
-export async function getStaticProps() {
-  try {
-    const [agents, teamMembers, testimonials, faqItems] = await Promise.all([
-      client.fetch(agentsQuery),
-      client.fetch(teamQuery),
-      client.fetch(testimonialsQuery),
-      client.fetch(faqQuery),
-    ]);
-    return {
-      props: { agents, teamMembers, testimonials, faqItems },
-      revalidate: 60,
-    };
-  } catch {
-    return {
-      props: { agents: [], teamMembers: [], testimonials: [], faqItems: [] },
-      revalidate: 60,
-    };
-  }
 }

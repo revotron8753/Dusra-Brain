@@ -1,31 +1,15 @@
 import { motion } from 'framer-motion';
 import { Linkedin, Twitter } from 'lucide-react';
 import Image from 'next/image';
-import { urlFor } from '../lib/sanity';
 
-const HARDCODED_TEAM = [
+const TEAM = [
+  { img: '/assets/Faces/Priyam.jpeg', name: 'Priyam', title: 'CEO', bio: 'Helping businesses move from manual chaos to AI-driven systems across marketing, sales, and operations. Vision — System that builds 100CR business with Solo Founders.', tag: 'CEO' },
   { img: '/assets/Faces/Ayush.svg', name: 'Ayush Kapoor', title: 'Founder', bio: 'Business Automations Expert, Founder at Dusra Brain. Building 1-person businesses to reach $1M+ valuations.', tag: 'Founder' },
   { img: '/assets/Faces/Mohan.jpeg', name: 'Mohan Verma', title: 'Co-Founder', bio: 'Business Leader with 25+ Years of Experience. Ex-VP of Airtel, GE Capital.', tag: 'Co-Founder' },
   { img: '/assets/Faces/Sarah.png', name: 'Sarah Rawat', title: 'Director of Growth', bio: 'Marketing Specialist. Leading Indian Women Entrepreneur in the fields of AI, Sustainability & Edtech.', tag: 'Director' },
 ];
 
-const LOCAL_PHOTOS = {
-  'Ayush Kapoor': '/assets/Faces/Ayush.svg',
-  'Mohan Verma': '/assets/Faces/Mohan.jpeg',
-  'Sarah Rawat': '/assets/Faces/Sarah.png',
-};
-
-export default function Team({ teamMembers = [] }) {
-  const team = teamMembers.length > 0
-    ? teamMembers.map(m => ({
-        img: m.photo ? urlFor(m.photo).width(300).url() : (LOCAL_PHOTOS[m.name] || '/assets/Faces/Ayush.svg'),
-        name: m.name,
-        title: m.title,
-        bio: m.bio,
-        tag: m.tag,
-        linkedinUrl: m.linkedinUrl,
-      }))
-    : HARDCODED_TEAM;
+export default function Team() {
   return (
     <section className="team section" id="team">
       <div className="container">
@@ -48,7 +32,7 @@ export default function Team({ teamMembers = [] }) {
         </motion.div>
 
         <div className="team-grid">
-          {team.map((member, i) => (
+          {TEAM.map((member, i) => (
             <motion.div
               key={member.name}
               initial={{ opacity: 0, y: 28 }}

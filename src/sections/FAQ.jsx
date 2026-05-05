@@ -37,9 +37,11 @@ const HARDCODED_FAQS = [
   },
 ];
 
+const clean = (s) => (s || '').replace(/100xai/gi, 'Dusra Brain');
+
 export default function FAQ({ faqItems = [] }) {
   const faqs = faqItems.length > 0
-    ? faqItems.map(f => ({ q: f.question, a: f.answer }))
+    ? faqItems.map(f => ({ q: clean(f.question), a: clean(f.answer) }))
     : HARDCODED_FAQS;
   const [open, setOpen] = useState(0);
 

@@ -2,10 +2,8 @@ import Head from 'next/head';
 import { motion } from 'framer-motion';
 import Navbar from '../../src/components/Navbar';
 import Footer from '../../src/sections/Footer';
-import BlogCard from '../../src/blog/components/BlogCard';
-import { client } from '../../src/lib/sanity';
-import { blogListQuery } from '../../src/lib/queries';
-export default function BlogPage({ posts }) {
+
+export default function BlogPage() {
   return (
     <>
       <Head>
@@ -35,36 +33,11 @@ export default function BlogPage({ posts }) {
 
       <section className="blog-listing">
         <div className="container">
-          {posts.length === 0 ? (
-            <p className="blog-empty">No posts published yet. Check back soon.</p>
-          ) : (
-            <div className="blog-grid">
-              {posts.map((post, i) => (
-                <motion.div
-                  key={post._id}
-                  initial={{ opacity: 0, y: 24 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.45, delay: (i % 3) * 0.08 }}
-                >
-                  <BlogCard post={post} />
-                </motion.div>
-              ))}
-            </div>
-          )}
+          <p className="blog-empty">No posts published yet. Check back soon.</p>
         </div>
       </section>
 
       <Footer />
     </>
   );
-}
-
-export async function getStaticProps() {
-  try {
-    const posts = await client.fetch(blogListQuery);
-    return { props: { posts }, revalidate: 60 };
-  } catch {
-    return { props: { posts: [] }, revalidate: 60 };
-  }
 }

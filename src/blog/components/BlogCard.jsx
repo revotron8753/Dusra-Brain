@@ -1,6 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
-import { urlFor } from '../../lib/sanity';
 
 function formatDate(dateStr) {
   if (!dateStr) return '';
@@ -8,16 +6,10 @@ function formatDate(dateStr) {
 }
 
 export default function BlogCard({ post }) {
-  const coverSrc = post.coverImage ? urlFor(post.coverImage).width(600).height(340).url() : null;
-
   return (
-    <Link href={`/blog/${post.slug.current}`} className="blog-card">
+    <Link href={`/blog/${post.slug}`} className="blog-card">
       <div className="blog-card__img-wrap">
-        {coverSrc ? (
-          <Image src={coverSrc} alt={post.title} fill className="blog-card__img" />
-        ) : (
-          <div className="blog-card__img-placeholder" />
-        )}
+        <div className="blog-card__img-placeholder" />
       </div>
       <div className="blog-card__body">
         {post.tags?.length > 0 && (

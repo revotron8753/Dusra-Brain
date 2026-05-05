@@ -1,7 +1,4 @@
-import Image from 'next/image';
 import Link from 'next/link';
-import { PortableText } from '@portabletext/react';
-import { urlFor } from '../../lib/sanity';
 import { ArrowLeft } from 'lucide-react';
 
 function formatDate(dateStr) {
@@ -9,27 +6,7 @@ function formatDate(dateStr) {
   return new Date(dateStr).toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' });
 }
 
-const portableTextComponents = {
-  types: {
-    image: ({ value }) => {
-      const src = urlFor(value).width(800).url();
-      return (
-        <div className="blog-post__content-img">
-          <Image src={src} alt={value.alt || ''} width={800} height={450} style={{ width: '100%', height: 'auto' }} />
-        </div>
-      );
-    },
-  },
-  marks: {
-    link: ({ children, value }) => (
-      <a href={value.href} target="_blank" rel="noopener noreferrer">{children}</a>
-    ),
-  },
-};
-
 export default function BlogPost({ post }) {
-  const coverSrc = post.coverImage ? urlFor(post.coverImage).width(1200).height(600).url() : null;
-
   return (
     <article className="blog-post">
       <div className="container blog-post__container">
@@ -52,16 +29,10 @@ export default function BlogPost({ post }) {
           </div>
         </header>
 
-        {coverSrc && (
-          <div className="blog-post__cover">
-            <Image src={coverSrc} alt={post.title} fill className="blog-post__cover-img" priority />
-          </div>
-        )}
-
         {post.excerpt && <p className="blog-post__excerpt">{post.excerpt}</p>}
 
         <div className="blog-post__body">
-          {post.content && <PortableText value={post.content} components={portableTextComponents} />}
+          {post.content && <p>{post.content}</p>}
         </div>
       </div>
     </article>
