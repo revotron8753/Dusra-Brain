@@ -19,8 +19,8 @@ const experts = [
   },
   {
     name: 'Ayush Kapoor',
-    role: 'Technology & Automation',
-    bio: 'Business Automations Expert, Founder at Dusra Brain. Building 1 Person businesses to reach $1M+ valuations.',
+    role: 'Technology & AI Marketing',
+    bio: 'Business AI Marketing Expert, Founder at Dusra Brain. Building 1 Person businesses to reach $1M+ valuations.',
     img: ayushImg,
   },
 ]

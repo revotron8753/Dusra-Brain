@@ -62,7 +62,7 @@ export default function Navbar() {
           <Link href="/" aria-label="Dusra Brain home">
             <img src={logo} alt="Dusra Brain" className="nav-logo" />
           </Link>
-          <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer" className="btn-primary nav-btn">Book Automation Audit</a>
+          <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer" className="btn-primary nav-btn">Book AI Marketing Audit</a>
         </div>
       )}
 
@@ -86,7 +86,7 @@ export default function Navbar() {
             className={`btn-primary nav-btn ${mobileCollapsed && !expanded ? 'nav-btn--hidden' : ''}`}
             onClick={() => setExpanded(false)}
           >
-            Book Automation Audit
+            Book AI Marketing Audit
           </a>
         </div>
       )}

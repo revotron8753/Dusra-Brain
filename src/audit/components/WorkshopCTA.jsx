@@ -6,7 +6,7 @@ export default function WorkshopCTA() {
     <section id="audit" className="workshop-section">
       <div className="container">
         <div className="workshop-card">
-          <p className="workshop-tag">Book an Automation Audit Today</p>
+          <p className="workshop-tag">Book an AI Marketing Audit Today</p>
           <h2 className="workshop-title">See exactly where your business can save time, cut costs, and grow faster with AI.</h2>
 
           <div className="workshop-price">
@@ -24,7 +24,7 @@ export default function WorkshopCTA() {
             <li>Action plan to scale your business using AI without complexity</li>
           </ul>
 
-          <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer" className="btn-primary workshop-btn">Book Automation Audit</a>
+          <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer" className="btn-primary workshop-btn">Book AI Marketing Audit</a>
           <p className="workshop-note">Secure payment · Personalized to your business · Start today</p>
         </div>
       </div>

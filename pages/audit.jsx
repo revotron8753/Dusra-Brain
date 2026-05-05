@@ -25,8 +25,8 @@ export default function AuditRoute() {
   return (
     <div className="audit-scope">
       <Head>
-        <title>Automation Audit — Dusra Brain</title>
-        <meta name="description" content="Book your free AI automation audit with Dusra Brain. Discover where your business can save time, cut costs, and grow faster with AI." />
+        <title>AI Marketing Audit — Dusra Brain</title>
+        <meta name="description" content="Book your free AI Marketing audit with Dusra Brain. Discover where your business can save time, cut costs, and grow faster with AI." />
       </Head>
       <AnnouncementBar />
       <Navbar />

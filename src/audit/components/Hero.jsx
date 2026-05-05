@@ -20,7 +20,7 @@ export default function Hero() {
             <span className="price-badge">90% OFF</span>
           </div>
           <p className="deadline">Deadline: {TODAY}</p>
-          <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer" className="btn-primary hero-btn">Book Automation Audit</a>
+          <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer" className="btn-primary hero-btn">Book AI Marketing Audit</a>
           <p className="hero-note">Personalized · Actionable · Instant access</p>
         </div>
       </div>
