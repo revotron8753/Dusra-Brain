@@ -160,7 +160,7 @@
 .field textarea:focus {
   background: var(--white);
   border-color: var(--navy);
-  box-shadow: 0 0 0 3px rgba(0,31,63,0.08);
+  box-shadow: 0 0 0 3px rgba(169,23,189,0.1);
 }
 
 .field select {
@@ -211,7 +211,7 @@
 .phone-row .phone-code:focus {
   background-color: var(--white);
   border-color: var(--navy);
-  box-shadow: 0 0 0 3px rgba(0,31,63,0.08);
+  box-shadow: 0 0 0 3px rgba(169,23,189,0.1);
 }
 
 .contact-submit {

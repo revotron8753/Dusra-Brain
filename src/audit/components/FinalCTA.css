@@ -15,7 +15,7 @@
 
 
 .audit-scope .final-sub {
-  color: #a8bbd0;
+  color: #BBB4ED;
   max-width: 620px;
   margin: 0 auto 12px;
   line-height: 1.7;
@@ -30,7 +30,7 @@
 
 
 .audit-scope .final-btn {
-  background: var(--red);
+  background: linear-gradient(135deg, #A917BD 0%, #D338A4 100%);
   color: #fff;
   font-size: 1rem;
   padding: 16px 44px;
@@ -39,17 +39,20 @@
   display: inline-block;
   font-weight: 800;
   margin-bottom: 14px;
-  transition: background 0.2s;
+  transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 28px rgba(169, 23, 189, 0.32);
 }
 
 
 .audit-scope .final-btn:hover {
-  background: #e0362c;
+  background: linear-gradient(135deg, #7212C6 0%, #A917BD 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 36px rgba(169, 23, 189, 0.42);
 }
 
 
 .audit-scope .final-deadline {
-  color: #5a7a99;
+  color: #9080C0;
   font-size: 0.8rem;
   font-weight: 600;
 }

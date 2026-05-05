@@ -29,7 +29,7 @@
   transform: translate(-50%, -50%);
   width: 700px;
   height: 400px;
-  background: radial-gradient(ellipse, rgba(255,65,54,0.08) 0%, transparent 70%);
+  background: radial-gradient(ellipse, rgba(169,23,189,0.1) 0%, transparent 70%);
   filter: blur(40px);
 }
 
@@ -85,7 +85,7 @@
   inset: 0;
   border-radius: var(--radius-md);
   border: 1px solid transparent;
-  background: linear-gradient(135deg, rgba(255,65,54,0.15), transparent 60%) border-box;
+  background: linear-gradient(135deg, rgba(169,23,189,0.15), transparent 60%) border-box;
   -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
   mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out;
@@ -97,7 +97,7 @@
 
 .agent-card:hover {
   background: rgba(255, 255, 255, 0.07);
-  border-color: rgba(255, 65, 54, 0.3);
+  border-color: rgba(169, 23, 189, 0.3);
   transform: translateY(-4px);
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
 }
@@ -114,9 +114,9 @@
 .agent-tag-badge {
   display: inline-block;
   padding: 4px 10px;
-  background: rgba(255, 65, 54, 0.15);
-  border: 1px solid rgba(255, 65, 54, 0.3);
-  color: #FF8A83;
+  background: rgba(169, 23, 189, 0.12);
+  border: 1px solid rgba(169, 23, 189, 0.28);
+  color: #CF85E8;
   font-family: var(--font-mono);
   font-size: 0.65rem;
   font-weight: 600;
@@ -137,10 +137,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 65, 54, 0.12);
+  background: rgba(169, 23, 189, 0.1);
   color: var(--red);
   border-radius: var(--radius-sm);
-  border: 1px solid rgba(255, 65, 54, 0.2);
+  border: 1px solid rgba(169, 23, 189, 0.2);
   margin-bottom: 16px;
   transition: all 0.3s;
 }
@@ -226,7 +226,7 @@
 .agent-cta:hover {
   background: var(--red-600);
   transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(255, 65, 54, 0.35);
+  box-shadow: 0 6px 20px rgba(169, 23, 189, 0.35);
 }
 
 /* Services footer CTA */

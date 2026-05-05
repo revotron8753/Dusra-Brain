@@ -79,7 +79,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} <span style={{color:'#fff'}}>Dusra</span>{' '}<span style={{color:'#a855f7'}}>Brain</span>. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} <span style={{color:'#fff'}}>Dusra</span>{' '}<span style={{color:'#A917BD'}}>Brain</span>. All rights reserved.</p>
           <div className="footer-legal">
             <a href="#">Privacy</a>
             <a href="#">Terms</a>

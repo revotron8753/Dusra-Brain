@@ -1,5 +1,5 @@
 .audit-scope .announcement-bar {
-  background: var(--red);
+  background: linear-gradient(135deg, #7212C6 0%, #A917BD 55%, #D338A4 100%);
   color: #fff;
   display: flex;
   align-items: center;
@@ -45,7 +45,7 @@
 
 .audit-scope .tag {
   background: #fff;
-  color: var(--red);
+  color: #7212C6;
   font-weight: 800;
   padding: 2px 8px;
   border-radius: 3px;

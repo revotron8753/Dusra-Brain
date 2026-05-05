@@ -1,4 +1,4 @@
-const logo = '/assets/Purple and Green Modern Gadget Repair Business Card.svg';
+const logo = '/assets/Withname.svg';
 
 export default function Footer() {
   return (
@@ -11,7 +11,7 @@ export default function Footer() {
           <a href="#">Contact Us</a>
           <a href="#">Refund Policy</a>
         </div>
-        <p className="footer-copy">© 2026 <span style={{color:'#fff'}}>Dusra</span>{' '}<span style={{color:'#a855f7'}}>Brain</span>. All rights reserved.</p>
+        <p className="footer-copy">© 2026 <span style={{color:'#fff'}}>Dusra</span>{' '}<span style={{color:'#A917BD'}}>Brain</span>. All rights reserved.</p>
       </div>
     </footer>
   )

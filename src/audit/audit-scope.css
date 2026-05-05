@@ -9,7 +9,7 @@
    (AuditPage.jsx adds `audit-body` to <body>). */
 body.audit-body {
   font-family: 'Montserrat', sans-serif;
-  color: #001F3F;
+  color: #080118;
   background: #ffffff;
   /* Override homepage's overflow-x: hidden if different; keep hidden */
   overflow-x: hidden;
@@ -25,15 +25,15 @@ body.audit-body {
 
 .audit-scope {
   font-family: 'Montserrat', sans-serif;
-  color: #001F3F;
+  color: #080118;
   width: 100%;
   /* CSS variables from landing's :root — kept locally scoped */
-  --navy: #001F3F;
-  --cream: #F0EEE9;
-  --red: #FF4136;
+  --navy: #080118;
+  --cream: #F5F0FF;
+  --red: #A917BD;
   --white: #ffffff;
-  --text: #001F3F;
-  --muted: #5a6a7a;
+  --text: #080118;
+  --muted: #8B7FAF;
 }
 
 /* Landing's App.css shared utilities — all scoped */
@@ -44,7 +44,7 @@ body.audit-body {
 }
 
 .audit-scope .btn-primary {
-  background: var(--red);
+  background: linear-gradient(135deg, #A917BD 0%, #D338A4 100%);
   color: #fff;
   border: none;
   padding: 14px 32px;
@@ -52,16 +52,19 @@ body.audit-body {
   font-size: 0.9rem;
   font-weight: 700;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-block;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.02em;
   text-decoration: none;
+  box-shadow: 0 8px 28px rgba(169, 23, 189, 0.32);
 }
 
 .audit-scope .btn-primary:hover {
-  background: #e0362c;
+  background: linear-gradient(135deg, #7212C6 0%, #A917BD 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 36px rgba(169, 23, 189, 0.42);
 }
 
 .audit-scope .section-title {

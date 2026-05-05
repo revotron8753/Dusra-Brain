@@ -13,7 +13,7 @@
 
 .audit-scope .instructor-card {
   background: #fff;
-  border: 1px solid rgba(0,31,63,0.08);
+  border: 1px solid rgba(169,23,189,0.1);
   border-radius: 12px;
   padding: 28px 20px;
   text-align: center;
@@ -28,7 +28,7 @@
 }
 
 .audit-scope .instructor-card:hover {
-  box-shadow: 0 6px 24px rgba(0,31,63,0.1);
+  box-shadow: 0 6px 24px rgba(169,23,189,0.1);
 }
 
 

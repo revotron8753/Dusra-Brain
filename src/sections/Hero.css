@@ -13,6 +13,8 @@
   position: absolute;
   inset: 0;
   pointer-events: none;
+  mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.6) 10%, black 20%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.6) 10%, black 20%);
 }
 
 .hero-grid {
@@ -38,7 +40,7 @@
   right: 5%;
   width: 560px;
   height: 560px;
-  background: radial-gradient(circle, rgba(255, 65, 54, 0.15) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(169, 23, 189, 0.2) 0%, transparent 70%);
 }
 
 .hero-glow-2 {
@@ -46,7 +48,7 @@
   left: -10%;
   width: 480px;
   height: 480px;
-  background: radial-gradient(circle, rgba(0, 51, 110, 0.5) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(114, 18, 198, 0.45) 0%, transparent 70%);
   animation-delay: 3s;
   animation-direction: reverse;
 }
@@ -95,9 +97,9 @@
   align-items: center;
   gap: 8px;
   padding: 7px 16px;
-  background: rgba(255, 65, 54, 0.12);
-  border: 1px solid rgba(255, 65, 54, 0.3);
-  color: #FF8A83;
+  background: rgba(169, 23, 189, 0.12);
+  border: 1px solid rgba(169, 23, 189, 0.3);
+  color: #CF85E8;
   font-family: var(--font-mono);
   font-size: 0.7rem;
   font-weight: 600;
@@ -270,7 +272,7 @@
   align-items: center;
   gap: 12px;
   padding: 18px 20px;
-  background: rgba(0, 31, 63, 0.6);
+  background: rgba(8, 1, 24, 0.65);
 }
 
 .mstat-icon {
@@ -366,7 +368,7 @@
 
 .mag-bar {
   height: 100%;
-  background: linear-gradient(90deg, var(--red) 0%, #FF6B63 100%);
+  background: linear-gradient(90deg, #A917BD 0%, #D338A4 100%);
   border-radius: 3px;
   transition: width 1s ease;
 }
@@ -384,8 +386,8 @@
   align-items: center;
   gap: 6px;
   padding: 10px 20px;
-  background: rgba(255, 65, 54, 0.08);
-  border-top: 1px solid rgba(255, 65, 54, 0.15);
+  background: rgba(169, 23, 189, 0.08);
+  border-top: 1px solid rgba(169, 23, 189, 0.15);
   font-family: var(--font-mono);
   font-size: 0.68rem;
   color: rgba(255, 255, 255, 0.45);
@@ -404,7 +406,7 @@
   font-size: 0.8rem;
   font-weight: 700;
   border-radius: 100px;
-  box-shadow: 0 8px 28px rgba(0, 31, 63, 0.22);
+  box-shadow: 0 8px 28px rgba(8, 1, 24, 0.22);
 }
 
 .hero-float-1 {

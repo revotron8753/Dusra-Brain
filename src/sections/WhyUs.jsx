@@ -23,7 +23,7 @@ export default function WhyUs() {
           transition={{ duration: 0.5 }}
           className="why-header"
         >
-          <div className="why-eyebrow"><span style={{color:'#fff'}}>DUSRA</span>{' '}<span style={{color:'#a855f7'}}>BRAIN</span> BENEFITS</div>
+          <div className="why-eyebrow"><span style={{color:'#fff'}}>DUSRA</span>{' '}<span style={{color:'#A917BD'}}>BRAIN</span> BENEFITS</div>
           <h2 className="why-title">
             Save time,<br /><span className="why-accent">close more deals.</span>
           </h2>

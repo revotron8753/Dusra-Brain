@@ -1,4 +1,4 @@
-const logoSvg = '/assets/Purple and Green Modern Gadget Repair Business Card.svg';
+const logoSvg = '/assets/Withname.svg';
 
 export default function Logo({ variant = 'dark', size = 'md' }) {
   return (

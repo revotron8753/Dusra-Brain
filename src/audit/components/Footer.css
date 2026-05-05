@@ -1,7 +1,7 @@
 .audit-scope .footer {
-  background: #000d1a;
+  background: #050010;
   padding: 36px 0;
-  color: #5a7a99;
+  color: #9080C0;
 }
 
 
@@ -15,7 +15,7 @@
 
 
 .audit-scope .footer-logo {
-  height: 44px;
+  height: 140px;
   width: auto;
 }
 
@@ -29,7 +29,7 @@
 
 
 .audit-scope .footer-links a {
-  color: #5a7a99;
+  color: #9080C0;
   text-decoration: none;
   font-size: 0.8rem;
   font-weight: 500;
@@ -42,5 +42,5 @@
 
 .audit-scope .footer-copy {
   font-size: 0.75rem;
-  color: #2a4a6a;
+  color: #4A3580;
 }

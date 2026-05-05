@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { CALENDLY_URL } from '../constants'
 
-const logo = '/assets/Purple and Green Modern Gadget Repair Business Card.svg';
+const logo = '/assets/Withname.svg';
+const logoIcon = '/assets/LOGO.svg';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -73,11 +74,9 @@ export default function Navbar() {
             onClick={() => mobileCollapsed && setExpanded(p => !p)}
             aria-label="Toggle menu"
           >
-            <img
-              src={logo}
-              alt="Dusra Brain"
-              className={`nav-logo ${mobileCollapsed ? 'nav-logo--small' : ''}`}
-            />
+            <div className="nav-logo-icon">
+              <img src={logoIcon} alt="Dusra Brain" className="nav-logo-icon-img" />
+            </div>
           </button>
           <a
             href={CALENDLY_URL}

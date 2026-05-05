@@ -18,7 +18,7 @@ export default function ToolsGrid() {
   return (
     <section className="tools-section">
       <div className="container">
-        <h2 className="section-title">What You Get with the <span style={{color:'#fff'}}>Dusra</span>{' '}<span style={{color:'#a855f7'}}>Brain</span> AI Marketing Program</h2>
+        <h2 className="section-title">What You Get with the <span style={{color:'var(--navy)'}}>Dusra</span>{' '}<span style={{color:'#A917BD'}}>Brain</span> AI Marketing Program</h2>
         <p className="section-sub">Practical outcomes for real business impact</p>
         <div className="outcomes-grid">
           <div className="outcome-group">

@@ -1,26 +1,33 @@
 /* ═══════════════════════════════════════════════════
    Dusra Brain — Design Tokens
-   Brand palette: #001F3F (navy) · #F0EEE9 (cream) · #FF4136 (red)
+   Brand palette: #080118 (deep purple) · #F5F0FF (lavender cream) · #A917BD (vivid purple)
+   Logo colors: #67D48E · #7212C6 · #A917BD · #BBB4ED · #D338A4 · #DAF9E6
    ═══════════════════════════════════════════════════ */
 
 :root {
   /* Brand colors */
-  --navy:     #001F3F;
-  --navy-800: #001530;
-  --navy-700: #002855;
-  --navy-600: #00336E;
-  --navy-100: #E3EAF2;
-  --navy-50:  #F0F4F8;
+  --navy:     #080118;
+  --navy-800: #04000E;
+  --navy-700: #0F0030;
+  --navy-600: #1C0050;
+  --navy-100: #E8E0F8;
+  --navy-50:  #F3F0FF;
 
-  --cream:       #F0EEE9;
-  --cream-dark:  #E5E3DD;
-  --cream-darker:#D8D5CE;
+  --cream:       #F5F0FF;
+  --cream-dark:  #EDE5FF;
+  --cream-darker:#DDD5F8;
 
-  --red:     #FF4136;
-  --red-600: #E0352B;
-  --red-700: #C42D24;
-  --red-50:  #FFF0EF;
-  --red-glow: rgba(255, 65, 54, 0.18);
+  --red:     #A917BD;
+  --red-600: #7212C6;
+  --red-700: #5A0DA0;
+  --red-50:  #F5EAFF;
+  --red-glow: rgba(169, 23, 189, 0.18);
+
+  /* Logo palette */
+  --mint:        #67D48E;
+  --pink:        #D338A4;
+  --lavender:    #BBB4ED;
+  --mint-light:  #DAF9E6;
 
   --white: #FFFFFF;
   --gray-300: #CBD0D8;
@@ -40,10 +47,10 @@
   --radius-lg: 24px;
 
   /* Shadows */
-  --shadow-sm:  0 2px 8px rgba(0, 31, 63, 0.07);
-  --shadow-md:  0 8px 28px rgba(0, 31, 63, 0.12);
-  --shadow-lg:  0 20px 56px rgba(0, 31, 63, 0.18);
-  --shadow-red: 0 8px 28px rgba(255, 65, 54, 0.32);
+  --shadow-sm:  0 2px 8px rgba(8, 1, 24, 0.07);
+  --shadow-md:  0 8px 28px rgba(8, 1, 24, 0.12);
+  --shadow-lg:  0 20px 56px rgba(8, 1, 24, 0.18);
+  --shadow-red: 0 8px 28px rgba(169, 23, 189, 0.32);
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -93,8 +100,8 @@ img { max-width: 100%; display: block; }
   align-items: center;
   gap: 8px;
   padding: 5px 14px;
-  background: rgba(255, 65, 54, 0.1);
-  border: 1px solid rgba(255, 65, 54, 0.25);
+  background: rgba(169, 23, 189, 0.1);
+  border: 1px solid rgba(169, 23, 189, 0.25);
   color: var(--red);
   font-family: var(--font-mono);
   font-size: 0.72rem;
@@ -135,7 +142,7 @@ img { max-width: 100%; display: block; }
   content: '';
   width: 6px;
   height: 6px;
-  background: var(--red);
+  background: var(--mint);
   border-radius: 50%;
   flex-shrink: 0;
 }
@@ -176,14 +183,14 @@ img { max-width: 100%; display: block; }
 }
 
 .btn-primary {
-  background: var(--red);
+  background: linear-gradient(135deg, #A917BD 0%, #D338A4 100%);
   color: var(--white);
   box-shadow: var(--shadow-red);
 }
 .btn-primary:hover {
-  background: var(--red-600);
+  background: linear-gradient(135deg, #7212C6 0%, #A917BD 100%);
   transform: translateY(-2px);
-  box-shadow: 0 14px 36px rgba(255, 65, 54, 0.42);
+  box-shadow: 0 14px 36px rgba(169, 23, 189, 0.42);
 }
 
 .btn-secondary {

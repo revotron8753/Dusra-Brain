@@ -98,7 +98,7 @@ export default function Hero() {
               <div className="mockup-dots">
                 <span></span><span></span><span></span>
               </div>
-              <span className="mockup-title"><span style={{color:'#fff'}}>Dusra</span>{' '}<span style={{color:'#a855f7'}}>Brain</span>{' '}Agent Dashboard</span>
+              <span className="mockup-title"><span style={{color:'#fff'}}>Dusra</span>{' '}<span style={{color:'#A917BD'}}>Brain</span>{' '}Agent Dashboard</span>
             </div>
 
             <div className="mockup-stats">

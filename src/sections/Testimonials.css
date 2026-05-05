@@ -100,7 +100,7 @@
   letter-spacing: 0.08em;
   padding: 4px 10px;
   background: var(--red-50);
-  border: 1px solid rgba(255,65,54,0.15);
+  border: 1px solid rgba(169,23,189,0.18);
   border-radius: 100px;
   white-space: nowrap;
 }

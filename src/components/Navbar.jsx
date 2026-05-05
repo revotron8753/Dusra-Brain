@@ -4,7 +4,8 @@ import { useRouter } from 'next/router';
 import Logo from './Logo';
 import { scrollTo } from '../utils/scroll';
 
-const logoSvg = '/assets/Purple and Green Modern Gadget Repair Business Card.svg';
+const logoSvg = '/assets/Withname.svg';
+const logoIcon = '/assets/LOGO.svg';
 
 export default function Navbar() {
   const [scrolled, setScrolled]   = useState(false);
@@ -85,11 +86,9 @@ export default function Navbar() {
             onClick={() => mobileCollapsed && setExpanded(p => !p)}
             aria-label="Toggle menu"
           >
-            <img
-              src={logoSvg}
-              alt="Dusra Brain"
-              className={`nav-logo ${mobileCollapsed ? 'nav-logo--small' : ''}`}
-            />
+            <div className="nav-logo-icon">
+              <img src={logoIcon} alt="Dusra Brain" className="nav-logo-icon-img" />
+            </div>
           </button>
           <a
             href="#contact"

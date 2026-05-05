@@ -29,7 +29,7 @@
 
 .audit-scope .hero-sub {
   font-size: 1rem;
-  color: #a8bbd0;
+  color: #BBB4ED;
   max-width: 580px;
   margin: 0 auto 36px;
   line-height: 1.7;
@@ -54,7 +54,7 @@
 
 .audit-scope .original-price {
   font-size: 1rem;
-  color: #5a7a99;
+  color: #9080C0;
   text-decoration: line-through;
   font-weight: 600;
 }
@@ -81,7 +81,7 @@
 
 .audit-scope .deadline {
   font-size: 0.85rem;
-  color: #a8bbd0;
+  color: #BBB4ED;
   font-weight: 600;
 }
 
@@ -96,7 +96,7 @@
 
 .audit-scope .hero-note {
   font-size: 0.75rem;
-  color: #5a7a99;
+  color: #9080C0;
   font-weight: 500;
 }
 

@@ -17,7 +17,7 @@
 
 .audit-scope .outcome-group {
   background: #fff;
-  border: 1px solid rgba(0,31,63,0.08);
+  border: 1px solid rgba(169,23,189,0.1);
   border-radius: 12px;
   padding: 28px;
 }
@@ -39,7 +39,7 @@
 
 
 .audit-scope .outcome-group.advanced .outcome-group-title {
-  color: #a8bbd0;
+  color: #BBB4ED;
 }
 
 
@@ -63,7 +63,7 @@
 
 
 .audit-scope .outcome-group.advanced .outcome-item {
-  color: #d0dce8;
+  color: #CFC8F5;
 }
 
 

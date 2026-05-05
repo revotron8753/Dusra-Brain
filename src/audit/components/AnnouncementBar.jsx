@@ -1,4 +1,4 @@
-const logo = '/assets/Purple and Green Modern Gadget Repair Business Card.svg';
+const logo = '/assets/LOGO.svg';
 import { CALENDLY_URL, TODAY } from '../constants'
 
 export default function AnnouncementBar() {

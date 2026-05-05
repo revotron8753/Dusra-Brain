@@ -10,7 +10,7 @@
 
 
 .audit-scope .bonuses-section .section-sub {
-  color: #a8bbd0;
+  color: #BBB4ED;
 }
 
 
@@ -45,7 +45,7 @@
 
 
 .audit-scope .bonus-card:hover {
-  border-color: rgba(255,65,54,0.4);
+  border-color: rgba(169,23,189,0.4);
 }
 
 
@@ -70,7 +70,7 @@
 
 .audit-scope .bonus-desc {
   font-size: 0.8rem;
-  color: #a8bbd0;
+  color: #BBB4ED;
   line-height: 1.5;
 }
 
