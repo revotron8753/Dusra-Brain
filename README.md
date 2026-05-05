@@ -1,8 +1,8 @@
-# 100xAI — Merged Portfolio + Audit Landing
+# Dusra Brain — Merged Portfolio + Audit Landing
 
 Unified Vite + React 18 app combining two previously separate projects:
 
-- **Homepage** (`/`) — the main 100xAI portfolio/agency site.
+- **Homepage** (`/`) — the main Dusra Brain portfolio/agency site.
 - **Audit page** (`/audit`) — the workshop/audit landing page that the
   homepage's "Book Free Audit" CTAs route to.
 

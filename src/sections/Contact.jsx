@@ -259,7 +259,7 @@ export default function Contact() {
             <div className="contact-meta">
               <a href="mailto:hello@100xai.co" className="meta-item">
                 <Mail size={16} />
-                <span>hello@100xai.co</span>
+                <span>hello@dusrabrain.com</span>
               </a>
               <a href="#" className="meta-item">
                 <MessageSquare size={16} />

@@ -25,7 +25,7 @@ export default function Footer() {
     {
       title: 'Connect',
       links: [
-        { label: 'hello@100xai.co', href: 'mailto:hello@100xai.co' },
+        { label: 'hello@dusrabrain.com', href: 'mailto:hello@100xai.co' },
         { label: 'Book a call', href: '#contact' },
         { label: 'LinkedIn', href: 'https://www.linkedin.com/company/100xaico/' },
       ],
@@ -40,7 +40,7 @@ export default function Footer() {
         {/* CTA banner — reserved for later use
         <div className="footer-cta">
           <div>
-            <h3>Ready to <span className="accent">100x</span> your growth?</h3>
+            <h3>Ready to <span className="accent">scale</span> with AI?</h3>
             <p>Deploy your first agent in 7 days. No lock-in. No surprises.</p>
           </div>
           <Link to="/audit" className="btn btn-primary">

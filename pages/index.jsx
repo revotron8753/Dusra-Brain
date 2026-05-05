@@ -18,8 +18,8 @@ export default function IndexPage({ agents, teamMembers, testimonials, faqItems 
   return (
     <>
       <Head>
-        <title>Dusra Brain — AI Automation Agency | 100x Your Growth</title>
-        <meta name="description" content="Dusra Brain — The AI automation agency that builds intelligent agents to 100x your growth. We don't suggest. We execute." />
+        <title>Dusra Brain — AI Automation Agency | Scale Your Growth</title>
+        <meta name="description" content="Dusra Brain — The AI automation agency that builds intelligent agents to scale your growth. We don't suggest. We execute." />
       </Head>
       <Navbar />
       <main>
