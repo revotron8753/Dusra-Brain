@@ -1,0 +1,22 @@
+{
+  "name": "dusra-brain-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Dusra Brain — AI Automation Agency Portfolio Website",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@portabletext/react": "^6.0.3",
+    "@sanity/client": "^7.22.0",
+    "@sanity/image-url": "^2.1.1",
+    "framer-motion": "^11.0.0",
+    "lucide-react": "^0.400.0",
+    "next": "^14.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sharp": "^0.33.0"
+  }
+}
