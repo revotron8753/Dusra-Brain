@@ -5,8 +5,7 @@ import Image from 'next/image';
 const TEAM = [
   { img: '/assets/Faces/Priyam.jpeg', name: 'Priyam', title: 'CEO', bio: 'Helping businesses move from manual chaos to AI-driven systems across marketing, sales, and operations. Vision — System that builds 100CR business with Solo Founders.', tag: 'CEO' },
   { img: '/assets/Faces/Ayush.svg', name: 'Ayush Kapoor', title: 'Founder', bio: 'Business Automations Expert, Founder at Dusra Brain. Building 1-person businesses to reach $1M+ valuations.', tag: 'Founder' },
-  { img: '/assets/Faces/Mohan.jpeg', name: 'Mohan Verma', title: 'Co-Founder', bio: 'Business Leader with 25+ Years of Experience. Ex-VP of Airtel, GE Capital.', tag: 'Co-Founder' },
-  { img: '/assets/Faces/Sarah.png', name: 'Sarah Rawat', title: 'Director of Growth', bio: 'Marketing Specialist. Leading Indian Women Entrepreneur in the fields of AI, Sustainability & Edtech.', tag: 'Director' },
+  { img: '/assets/Faces/Anurag Gupta.jpg', name: 'Anurag Gupta', title: 'Co-Founder', bio: 'AI automation professional driving NGO-led impact projects and smart technology solutions. Connected with government policymakers, global investors, and international networks. Empowering businesses, villages, and young entrepreneurs through digital transformation, sustainability, and innovation. Building a smarter, globally connected India through technology, climate action, and impactful partnerships.', tag: 'Co-Founder', imgPosition: 'right 50%' },
 ];
 
 export default function Team() {
@@ -42,7 +41,7 @@ export default function Team() {
               className="team-card"
             >
               <div className="team-photo-wrap">
-                <Image src={member.img} alt={member.name} fill className="team-photo" />
+                <Image src={member.img} alt={member.name} fill className="team-photo" style={member.imgPosition ? { objectPosition: member.imgPosition } : undefined} />
                 <span className="team-tag-badge">{member.tag}</span>
               </div>
               <div className="team-info">
