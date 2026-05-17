@@ -3,8 +3,8 @@ import { Linkedin, Twitter } from 'lucide-react';
 import Image from 'next/image';
 
 const TEAM = [
-  { img: '/assets/Faces/Priyam.jpeg', name: 'Priyam', title: 'CEO', bio: 'Helping businesses move from manual chaos to AI-driven systems across marketing, sales, and operations. Vision — System that builds 100CR business with Solo Founders.', tag: 'CEO' },
-  { img: '/assets/Faces/Ayush.svg', name: 'Ayush Kapoor', title: 'Founder', bio: 'Business Automations Expert, Founder at Dusra Brain. Building 1-person businesses to reach $1M+ valuations.', tag: 'Founder' },
+  { img: '/assets/Faces/Priyam.jpg', name: 'Priyam', title: 'CEO', bio: 'Helping businesses move from manual chaos to AI-driven systems across marketing, sales, and operations. Vision — System that builds 100CR business with Solo Founders.', tag: 'CEO' },
+  { img: '/assets/Faces/Ayush.jpg', name: 'Ayush Kapoor', title: 'Founder', bio: 'Business Automations Expert, Founder at Dusra Brain. Building 1-person businesses to reach $1M+ valuations.', tag: 'Founder', imgPosition: 'center 20%' },
   { img: '/assets/Faces/Anurag Gupta.jpg', name: 'Anurag Gupta', title: 'Co-Founder', bio: 'AI automation professional driving NGO-led impact projects and smart technology solutions. Connected with government policymakers, global investors, and international networks. Empowering businesses, villages, and young entrepreneurs through digital transformation, sustainability, and innovation. Building a smarter, globally connected India through technology, climate action, and impactful partnerships.', tag: 'Co-Founder', imgPosition: 'right 50%' },
 ];
 
@@ -41,7 +41,7 @@ export default function Team() {
               className="team-card"
             >
               <div className="team-photo-wrap">
-                <Image src={member.img} alt={member.name} fill className="team-photo" style={member.imgPosition ? { objectPosition: member.imgPosition } : undefined} />
+                <Image src={member.img} alt={member.name} fill className="team-photo" style={member.imgScale ? { transform: `scale(${member.imgScale})`, transformOrigin: member.imgPosition || 'center center' } : member.imgPosition ? { objectPosition: member.imgPosition } : undefined} />
                 <span className="team-tag-badge">{member.tag}</span>
               </div>
               <div className="team-info">
